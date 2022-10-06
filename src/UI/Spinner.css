@@ -1,0 +1,21 @@
+.spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.spinnerIcon {
+  animation: explore-spin infinite 5s linear;
+  font-size: 3rem;
+  color: #2c2c;
+}
+
+@keyframes load-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

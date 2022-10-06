@@ -1,0 +1,65 @@
+.mainSortSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  padding-bottom: 0;
+}
+
+.lines {
+  width: 55%;
+  height: 1px;
+  background-color: #8f8f8f;
+  opacity: 0.7;
+}
+
+.gridList {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.gridIcon,
+.listIcon {
+  font-size: 1.3rem;
+  cursor: pointer;
+  display: flex;
+}
+
+.sortByValues,
+select,
+option {
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+
+select {
+  border: 2px solid #8f8f8f;
+  border-radius: 3px;
+}
+
+select:focus {
+  outline: none;
+  border: 2px solid #2c2;
+  border-radius: 3px;
+}
+
+.activeView {
+  color: #2c2;
+}
+
+.totalProducts {
+  font-size: 0.85rem;
+}
+
+@media (max-width: 480px) {
+  .gridList {
+    position: relative;
+  }
+
+  .totalProducts {
+    position: absolute;
+    top: 117%;
+    width: 200px;
+  }
+}

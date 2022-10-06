@@ -1,0 +1,288 @@
+.mainCart {
+  margin-bottom: 8rem;
+}
+
+.mainCartContentBar {
+  padding: 2rem 10rem;
+}
+
+.cartItemConten {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
+
+.cartColums {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 50px;
+  background-color: white;
+  padding: 1rem 0;
+  text-align: center;
+  gap: 1rem;
+}
+
+.cartColums .itemH4 {
+  margin-right: 3rem;
+}
+
+.cartItems {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 50px;
+  text-align: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.itemQH4 {
+  margin-right: 4rem;
+}
+
+.itemDH4 {
+  display: none;
+}
+.cartImg {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.cartProductInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.cartProductInfo h4 {
+  text-transform: capitalize;
+}
+
+.cartProductInfo p {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.smallPrice {
+  display: none;
+}
+
+.cartImg img {
+  width: 7rem;
+  height: 100px;
+}
+
+.cartColor {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 100px;
+  display: inline-block;
+}
+
+.trash {
+  background-color: transparent;
+  border: none;
+}
+
+.trashIcon {
+  color: red;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.trashIcon:hover {
+  transform: scale(1.07);
+}
+
+.linkCartContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  background-color: white;
+  padding: 1rem;
+}
+
+.linkContent {
+  background-color: #2c2;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 5px;
+}
+
+.linkContent:hover {
+  background-color: rgb(17, 159, 17);
+}
+
+.linkCartContent button {
+  background-color: black;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.linkCartContent button:hover {
+  background-color: rgb(54, 53, 53);
+}
+
+.div {
+  border: 1px solid black;
+  width: 400px;
+  margin-left: auto;
+  padding: 1rem;
+  background-color: white;
+}
+
+.div h4,
+.div p {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.4rem;
+}
+
+.grandTotal {
+  font-size: 1.3rem;
+  padding: 1rem;
+}
+
+.checkout {
+  background-color: #2c2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin: auto;
+  margin-top: 1rem;
+  padding: 4px 10px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.checkouts {
+  background-color: #2c2;
+  border: none;
+  padding: 6px 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  margin: auto;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.checkout:hover {
+  background-color: rgb(17, 159, 17);
+}
+
+.checkouts:hover {
+  background-color: rgb(17, 159, 17);
+}
+
+@media (max-width: 1120px) {
+  .cartColums {
+    grid-template-columns: 4fr 1fr 2fr 1fr 40px;
+  }
+
+  .cartItems {
+    grid-template-columns: 4fr 1fr 2fr 1fr 40px;
+  }
+
+  .itemQH4 {
+    margin-right: 1rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .mainCartContentBar {
+    padding: 2rem 4rem;
+  }
+
+  .itemQH4 {
+    margin-right: 2rem;
+  }
+}
+
+@media (max-width: 820px) {
+  .cartColums {
+    grid-template-columns: 3fr 2fr 70px;
+  }
+
+  .itemPH4,
+  .itemSH4 {
+    display: none;
+  }
+
+  .itemQH4 {
+    margin-right: 0;
+  }
+
+  .itemDH4 {
+    display: block;
+  }
+
+  .cartItems {
+    grid-template-columns: 3fr 2fr 70px;
+  }
+
+  .cartItems h4 {
+    display: none;
+  }
+
+  .cartItems .itemName {
+    display: flex;
+  }
+}
+
+@media (max-width: 660px) {
+  .mainCartContentBar {
+    padding: 2rem;
+  }
+
+  .div {
+    margin: auto;
+    width: 100%;
+  }
+
+  .cartImg {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .itemH4 {
+    text-align: start;
+    padding-left: 0.5rem;
+  }
+
+  .trash {
+    margin-left: 2rem;
+  }
+}
+
+@media (max-width: 470px) {
+  .linkCartContent {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .linkContent {
+    width: 100%;
+    text-align: center;
+    padding: 7px;
+  }
+
+  .linkCartContent button {
+    width: 100%;
+    text-align: center;
+    padding: 7px;
+  }
+
+  .trash {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}

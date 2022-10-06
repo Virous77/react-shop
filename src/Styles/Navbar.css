@@ -1,0 +1,158 @@
+.navbar {
+  position: fixed;
+  bottom: 0;
+  padding: 1.5rem 1rem;
+  width: 100%;
+  background-color: whitesmoke;
+  z-index: 100;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.active {
+  color: #2c2c2c;
+}
+
+.not-active {
+  color: #8f8f8f;
+}
+
+.navbar li {
+  text-align: center;
+}
+
+.Icon {
+  font-size: 2.3rem;
+  font-weight: 200;
+  cursor: pointer;
+}
+
+.explore {
+  animation: explore-spin infinite 20s linear;
+}
+
+.main-nav {
+  padding: 1rem 10rem;
+}
+
+.main-nav h1 {
+  cursor: pointer;
+  font-size: 2rem;
+  color: rgb(102, 102, 102);
+}
+
+.main-nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart-Icons {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.login,
+.cart {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.login {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.cart {
+  position: relative;
+}
+
+.login span,
+.cart span {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.Icons {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.cartNumberTotal {
+  font-size: 0.9rem;
+  display: inline-block;
+}
+
+.cartValue {
+  position: absolute;
+  top: -10%;
+  right: -15%;
+  background-color: rgb(43, 207, 43);
+  width: 1.3rem;
+  height: 1.3rem;
+  font-size: 0.9rem;
+  border-radius: 100px;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  justify-content: center;
+}
+
+@media (max-width: 992px) {
+  .main-nav {
+    padding: 1rem 4rem;
+  }
+}
+
+@media (max-width: 660px) {
+  .main-nav {
+    padding: 1rem 1.5rem;
+  }
+
+  .navbar ul {
+    justify-content: space-between;
+    padding: 0 2rem;
+  }
+
+  .Icons {
+    font-size: 20px;
+  }
+
+  .login span,
+  .cart span {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .cart-Icons {
+    gap: 1.4rem;
+  }
+
+  .main-nav h1 {
+    font-size: 1.7rem;
+  }
+
+  .Icon {
+    font-size: 1.5rem;
+  }
+}
+
+/* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+background:#00cc66;  */
+
+@keyframes explore-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

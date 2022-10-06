@@ -1,0 +1,212 @@
+.mainFilterBar {
+  padding: 1rem 0.3rem;
+}
+
+.mainFilter {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.mainFilter form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.searchInput {
+  padding: 6px 0.5rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 60%;
+}
+
+.category button {
+  display: flex;
+  border: none;
+  background-color: transparent;
+  text-transform: capitalize;
+  margin-top: 0.4rem;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+
+.activeFilters {
+  text-decoration: underline;
+  color: #2c2;
+}
+
+.company {
+  margin-top: 0.3rem;
+}
+
+.company select {
+  text-transform: capitalize;
+}
+
+.color {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  width: 70%;
+  margin-top: 0.3rem;
+  gap: 0.3rem;
+}
+
+.color button {
+  width: 25px;
+  height: 25px;
+  border-radius: 100px;
+  position: relative;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.filterCheckIcon {
+  position: absolute;
+  top: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.activeColor {
+  font-size: 1rem;
+}
+
+.formControlP {
+  margin-top: 0.4rem;
+}
+
+.formControlC {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.clearButton button {
+  padding: 6px 1rem;
+  border: none;
+  background-color: #2c2;
+  border-radius: 5px;
+  color: white;
+}
+
+.clearButton button:hover {
+  background-color: rgb(18, 169, 18);
+}
+
+@media (max-width: 1240px) {
+  .searchInput {
+    width: 75%;
+  }
+
+  .color button {
+    width: 20px;
+    height: 20px;
+  }
+
+  .formControlC {
+    width: 80%;
+  }
+}
+
+@media (max-width: 992px) {
+  .searchInput {
+    width: 85%;
+  }
+
+  .color button {
+    width: 17px;
+    height: 17px;
+  }
+
+  .formControlC {
+    width: 90%;
+  }
+
+  .filterCheckIcon {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .searchInput {
+    width: 40%;
+  }
+
+  .color button {
+    width: 30px;
+    height: 30px;
+  }
+
+  .color {
+    width: 40%;
+  }
+
+  .formControlC {
+    width: 30%;
+  }
+
+  .filterCheckIcon {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 590px) {
+  .mainFilterBar {
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 2rem;
+  }
+
+  .searchInput {
+    width: 60%;
+  }
+
+  .color button {
+    width: 30px;
+    height: 30px;
+  }
+
+  .color {
+    width: 60%;
+  }
+
+  .formControlC {
+    width: 50%;
+  }
+
+  .filterCheckIcon {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .searchInput {
+    width: 70%;
+  }
+
+  .color button {
+    width: 30px;
+    height: 30px;
+  }
+
+  .color {
+    width: 80%;
+  }
+
+  .formControlC {
+    width: 80%;
+  }
+
+  .filterCheckIcon {
+    font-size: 1rem;
+  }
+}

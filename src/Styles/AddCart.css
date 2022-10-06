@@ -1,0 +1,103 @@
+.colors-bar {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.colors-bar span {
+  font-weight: bold;
+}
+
+.colors {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.colors button {
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+  gap: 1rem;
+  margin-right: 1rem;
+  border: none;
+}
+
+.check {
+  color: white;
+  /* position: absolute;
+  top: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+.color-btn {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: #222;
+  margin-right: 0.5rem;
+  border: none;
+  cursor: pointer;
+  opacity: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.active {
+  opacity: 1;
+}
+
+.buttons {
+  display: grid;
+  width: 100px;
+  grid-template-columns: 20px 5px 10px;
+  gap: 2.5rem;
+  margin-top: 0.5rem;
+}
+
+.cart-btn {
+  margin-top: 1rem;
+}
+
+.inc,
+.dec {
+  background-color: transparent;
+  border: none;
+  background-color: white;
+  color: orangered;
+  border-radius: 100px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.inc:active,
+.dec:active {
+  transform: scale(1.01);
+  background-color: #2c2c;
+  color: white;
+}
+
+.goCart {
+  background-color: #2c2c;
+  width: fit-content;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  border-radius: 5px;
+}
+
+.btn-go {
+  color: white;
+  display: block;
+  padding: 2px 1.5rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+}

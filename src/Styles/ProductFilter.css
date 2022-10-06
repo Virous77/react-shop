@@ -1,0 +1,29 @@
+.productFilter {
+  padding: 2rem 10rem;
+  margin-bottom: 8rem;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.emptyMsg {
+  margin-top: 6rem;
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .productFilter {
+    padding: 2rem 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .productFilter {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 660px) {
+  .productFilter {
+    padding: 2rem 2rem;
+  }
+}
