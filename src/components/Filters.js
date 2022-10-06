@@ -64,7 +64,9 @@ const Filters = () => {
             <div className="category">
               {categories.map((c, idx) => (
                 <button
-                  className={`${category === c ? "activeFilters" : null}`}
+                  className={`${
+                    category === c ? "activeFilters" : "nonActive"
+                  }`}
                   key={idx}
                   onClick={updateFilters}
                   name="category"

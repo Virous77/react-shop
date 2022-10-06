@@ -11,7 +11,7 @@ const Cart = () => {
   if (cart.length < 1) {
     return (
       <section className="emptyCart">
-        <h2>Your cart is empty.</h2>
+        <h2 className="cartEmptyBar">Your cart is empty.</h2>
 
         <Link to="/products" className="cartBackButton">
           Fill it

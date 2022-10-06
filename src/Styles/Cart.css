@@ -174,6 +174,28 @@
   cursor: pointer;
 }
 
+.cartEmptyBar {
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.cartBackButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2c2;
+  color: white;
+  width: fit-content;
+  margin: auto;
+  padding: 5px 2rem;
+  border-radius: 5px;
+}
+
+.cartBackButton:hover {
+  background-color: rgb(18, 153, 18);
+}
+
 .checkout:hover {
   background-color: rgb(17, 159, 17);
 }

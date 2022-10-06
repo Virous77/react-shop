@@ -31,11 +31,25 @@
   margin-top: 0.4rem;
   font-family: "Poppins", sans-serif;
   cursor: pointer;
+  font-size: 1rem;
 }
 
 .activeFilters {
   text-decoration: underline;
   color: #2c2;
+  background-color: transparent;
+}
+
+.nonActive {
+  color: black;
+}
+
+option {
+  color: black;
+}
+
+select {
+  color: black;
 }
 
 .company {
